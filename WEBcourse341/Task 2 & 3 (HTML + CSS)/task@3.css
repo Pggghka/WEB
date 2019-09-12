@@ -1,0 +1,686 @@
+/*All page styles*/e
+*
+{
+  margin: 0;
+  padding: 0;
+}
+body, .blockDes{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 55px;
+}
+
+h2{
+	background: black;
+	color: white;
+	font-family: Helvetica;
+	font-weight: 100;
+	text-align: left;
+	padding: 10px;
+	padding-left: 40px;
+	margin-bottom: 55px;
+
+}
+
+
+.blockDes {
+	text-align: center;
+}
+
+/*Task@1*/
+.first_task div{
+	display: inline-block;
+	line-height: 50px;
+}
+
+.circle{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: yellowgreen;
+	color: white;
+	text-align: center;
+}
+
+.line {
+	height:6px;
+	width:60px;
+	background: lightgray;
+	margin: 2px auto;
+
+}
+
+.fourth{
+	background: darkorchid;
+}
+
+.fifth{
+	background: lightgray;
+	color: black;
+}
+
+/*
+Task@2
+Вместо hr использовал блоки по рекомендации. Каждому блоку присвоил border-top 
+*/
+
+.ecvalizer{
+	width:400px;
+	height:300px;
+	background: #323232;
+	border-radius: 10px;
+	position: relative;
+
+}
+
+.column{
+	width:30px;
+	height:83px;
+	background: linear-gradient(to top, #ff8f04, #ffc74d);
+	display: inline-block;
+	position: absolute;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	bottom:30px;
+	left:10px;
+}
+.column:nth-child(2){
+	height:32px;
+	left:50px;
+}
+.column:nth-child(3){
+	height:134px;
+	left:90px;
+}
+.column:nth-child(4){
+	height: 168px;
+	left:130px;
+}
+.column:nth-child(5){
+	left:170px;
+}
+.column:nth-child(6){
+	height: 49px;
+	left:210px;
+}
+
+.column div{
+	position: absolute;
+	left:0;
+	bottom: 15px;
+	border:none;
+	border-top: 2px solid #323232;
+	width: 100%;
+	z-index: 777;
+	display: inline-block;
+}
+
+.column div:nth-child(2){
+	bottom: 32px;
+}
+.column div:nth-child(3){
+	bottom: 49px;
+}
+.column div:nth-child(4){
+	bottom: 66px;
+}
+.column div:nth-child(5){
+	bottom: 83px;
+}
+.column div:nth-child(6){
+	bottom: 100px;
+}
+.column div:nth-child(7){
+	bottom: 117px;
+}
+.column div:nth-child(8){
+	bottom: 134px;
+}
+.column div:nth-child(9){
+	bottom: 151px;
+}
+
+/*
+Task@3
+Убрал псевдоэлемент, а также лишние стили
+*/
+.diagram{
+	background: #ecf4e2;
+	font-family: Times New Roman;
+    font-size: 25px;
+    line-height: 75px;
+    text-align: center;
+    width: 75px;
+    height: 75px;    
+    border: 20px solid #95cd8b;
+    border-right: 20px solid #cee6bb;
+	border-radius: 50%;
+}
+
+/*
+Task@4
+Границу сделал белой и добавил черную тень.
+*/
+.nav{
+	background: linear-gradient(to top, #b5c480, #f8f8f3);
+	text-align: left;
+	width:400px;
+	height:30px;
+	border-radius: 0 20px 20px 0;
+}
+.Tab{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: inline-block;
+	border-right: 2px solid #fff;
+	border-radius: 30px;
+	box-shadow: 2px 0px 0px 0px rgba(0,0,0,0.5);
+}
+.nav div{
+	display: inline-block;
+
+}
+
+/*Task@5*/
+
+.table table {
+  border-collapse: collapse;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.table td, th {
+  border: 1px solid #000;
+  position: relative;
+}
+
+.table td {
+  width: 58px;
+  height: 58px;
+}
+
+.table td:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #0063ef;
+  position: absolute;
+  top: calc(50% - 20px);
+  right: calc(50% - 20px);
+}
+
+.table tbody tr:hover {
+  background: #ffe581;
+}
+
+.table tbody td:hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  background: #ffe581;
+  z-index: -1;
+}
+
+.table tbody td:hover:before {
+  background: #000;
+}
+
+.table tbody td:hover {
+  background: #ffcd00;
+}
+
+
+/*Task@6*/
+.nav6 label{
+	text-align: center;
+	height: 30px;
+	width: 100px;
+	line-height: 30px;
+	display: inline-block;
+	margin-left: -4px;
+	background: #bfbfbf;
+     background: -moz-linear-gradient(top,#dedede,#bfbfbf 50%,#dedede);
+     background: -webkit-linear-gradient(top,#dedede,#bfbfbf 50%,#dedede);
+     background: -ms-linear-gradient(top,#dedede,#bfbfbf 50%,#dedede);
+     background: -o-linear-gradient(top,#dedede,#bfbfbf 50%,#dedede);
+     background: linear-gradient(to bottom,#dedede,#bfbfbf 50%,#dedede);
+}
+input[type="radio"]{
+	display: none;
+}
+.nav6 input:checked + label{
+	color: white;
+	background: #64c51d;
+	 background: -moz-linear-gradient(top,#aee188,#64c51d 50%,#aee188);
+     background: -webkit-linear-gradient(top,#aee188,#64c51d 50%,#aee188);
+     background: -ms-linear-gradient(top,#aee188,#64c51d 50%,#aee188);
+     background: -o-linear-gradient(top,#aee188,#64c51d 50%,#aee188);
+     background: linear-gradient(to bottom,#aee188,#64c51d 50%,#aee188);
+}
+span.arrow{
+	display: inline-block;
+	-webkit-transform:scale(2,10.6); /* Safari and Chrome */
+	font-weight: bold;
+	color: white;
+	float: right;
+
+}
+
+/*Task@7*/
+.numItem{
+	background: linear-gradient(to top, #d2d2d3, #f8f9f6);
+	display:inline-block;
+	line-height: 25px;
+	width:25px;
+	height: 25px;
+	margin-left: 7px;
+	border-radius: 5spx;
+	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0,0,0,0.25);
+}
+
+/*Task@8*/
+
+.wrapper {
+  position: relative;
+  margin: 100px auto 0;
+  width: 600px;
+  height: 380px;
+}
+.slider {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  background-color: #ddd;
+  -webkit-box-shadow: 0 0 20px #000;  
+          box-shadow: 0 0 20px #000;    
+}
+.wrapper > input {
+  display: none;
+}
+.slides {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.slide1 {
+  background-image: url(images/1.jpg);
+  background-size: cover;
+}
+
+.slide2 {
+  background-image: url(images/2.jpg);
+   background-size: cover;
+}
+
+.slide3 {
+  background-image: url(images/3.jpg);
+  background-size: cover;
+}
+
+.slide4 {
+  background-image: url(images/4.jpg);
+  background-size: cover;
+}
+
+.slide5 {
+  background-image: url(images/5.jpg);
+  background-size: cover;  
+}
+
+.wrapper label {
+  position: relative;
+  bottom: 34px;
+  margin-right: 8px;
+  z-index: 1;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: #000;
+  cursor: auto;
+} 
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+  background-color: #f00;
+  -webkit-box-shadow: 0 0 12px 3px #fff;
+          box-shadow: 0 0 12px 3px #fff;
+}
+
+.slides {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+       -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+          transition: transform ease-in-out .5s, opacity ease-in-out .5s;        
+} 
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+  z-index: 1;
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+       -o-transform: scale(1);
+          transform: scale(1);
+
+}
+
+/*Task@9*/
+.nine_task ul {
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+  list-style-type: none;
+  color: #880000;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #f9e497;
+  box-shadow: 5px 5px 0  0 #880000;
+  padding: 5px;
+  margin-bottom: 60px;
+}
+
+.nine_task li {
+  margin-bottom: 2px;
+  text-align: left;
+}
+
+/*Task@10*/
+.regForm{
+	width: 400px;
+	height: 270px;
+	background-color: #0691cf;
+	border: 3px solid #0074b3;
+	color: white;
+	font-family: 'Open Sans', arial;
+	font-weight: normal;
+}
+
+.regForm label, .regForm input{
+	float:left;
+}
+
+.regForm input {
+	width: 150px;
+}
+.registration{
+	padding-left: 20px;
+	padding-right: 50px;
+
+}
+
+.firstContainer, .secondContainer{
+	width: 100%;
+	height:70px;
+}
+
+.registration input{
+	margin-top: 5px;
+}
+.mail{
+	width: 100% !important;
+}
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+.topReg{
+	width:100%;
+	border-bottom: 1px solid white;
+	text-align: left;
+margin-bottom: 20px;
+
+}
+.topReg p{
+	margin: 0px;
+	font-size: 25px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.regForm button{
+	background-color: #ffdf7e;
+	border: none;
+	padding: 5px 10px;
+	float: left;
+	margin-left: 20px;
+}
+
+/*Task@11*/
+.el{
+	text-align: left;
+	margin-left: 50px;
+	height:140px;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.Menu11 {
+  display: inline-block;
+}
+.Menu11 > li {
+  position: relative;
+  float: left;
+  margin-right: 3em;
+  background-color: #fff;
+}
+.Menu11 > li span {
+  position: relative;
+  top: -3px;
+  z-index: 200;
+  display: inline-block;
+  border-radius: 10px 10px 0 0;
+  padding: .31em;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #fff;
+}
+.Menu11 > li:hover span {
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 6px 0 0 #fff, 0 0 6px 3px #ccc;
+}
+.Menu11 > li:hover .obertka {
+  display: block;
+}
+.Menu11::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.obertka {
+  position: absolute;
+  top: 100%;
+  z-index: 100;
+  margin-top: 3px;
+  width: auto;
+  display: none;
+  padding: .13em;
+  box-shadow: 0 0 6px 3px #ccc;
+  background-color: #fff;
+}
+.obertka > li {
+  padding: .19em 3em .19em .19em;
+  cursor: pointer;
+}
+.obertka > li:hover {
+  color: #fff;
+  background-color: #37ABFF;  
+}
+
+/*Task@12*/
+.rezina{
+	height:200px;
+	background-color: #323232;
+	padding-top:50px; 
+}
+.ugolok{
+	margin: 0 auto;
+	width:25px;
+	height:25px;
+	background-color: #89b7d5;
+	border-top:3px solid #bcddef;
+	border-left:3px solid #bcddef;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+.mainBlock{
+	width: 90%;
+	height:50px;
+	margin: 0 auto;
+	margin-top:-15px;
+	color: white;
+	background-color: #89b7d5;
+	border:3px solid #bcddef;
+}
+
+/*Task@13*/
+.hosting{
+	height: 250px;
+	background-color: #4d6278;
+	padding-top: 20px;
+	font-family: 'Open Sans', arial;
+	font-weight: bold;
+	font-size: 13px;
+}
+.subscription{
+	margin: 0 auto; 
+	background-color: white;
+	width: 590px;
+	height: 140px;
+	border-radius: 5px;
+	padding: 15px 0;
+	box-shadow: 0 28px 40px rgba(0,0,0, 0.3);
+
+}
+.subItem{
+	display: inline-block;
+	border-right: 1px solid #eaeaea;
+	height:140px;
+	width:194px;
+}
+
+.subItem:nth-child(3){
+	border:none;
+}
+.subItem:nth-child(1)>div{
+    min-height: 42px;
+    width: 60px;
+    margin: 0 auto;
+    background: url("images/hosting.png") no-repeat;
+    background-position: 0 3px;
+}
+.subItem:nth-child(2)>div{
+    min-height: 42px;
+    width: 60px;
+    margin: 0 auto;
+    background: url("images/hosting.png") no-repeat;
+    background-position: 0 -42px;
+}
+.subItem:nth-child(3)>div{
+    min-height: 42px;
+    width: 60px;
+    margin: 0 auto;
+    background: url("images/hosting.png") no-repeat;
+    background-position: 0 -84px;
+}
+.subItem p{
+	color: #f57843;
+	font-size: 14px;
+}
+
+.subItem .price{
+	font-weight: normal;
+	display: block;
+}
+
+.subItem button{
+	margin-top: 13px;
+	background-color: #f56232;
+	border:none;
+	color: white;
+	padding: 5px 8px;
+	border-radius: 2px;
+	top:0;
+}
+
+/*Task@14*/
+.one{
+	margin-left: 150px;
+
+	color: white;
+	width: 350px;
+	background-color: #008b66;
+	text-align: left;
+	padding: 10px;
+	font-size: 17px;
+}
+.two{
+	margin-top: -6px;
+	margin-left: 175px;
+	background-color: #dee6e1;
+	width: 325px;
+	text-align: left;
+	font-size: 14.5px;
+	padding: 10px;
+}
+
+/*Task@15*/
+article.track
+{
+         background: linear-gradient(#fff, #dfdfdf);
+         border: 2px solid white;
+         border-radius: 0  0 10px 10px;
+         width: 400px;
+         margin: 5px auto;
+         padding: 50px 7px 10px 7px;
+         font-family: Arial, sans-serif;
+         position: relative;
+}
+article.track::before
+{
+         content:attr(title);
+         font-weight: bold;
+         font-size: 27px; color: RGB(255, 177, 99);
+         position: absolute;
+         display: block;
+         top: -2px; left: -2px; right: -2px; /* расширяем на ширину границы */
+         padding: 7px;
+         background-image: linear-gradient(120deg, black 100px, transparent 100px);
+}
+
+.blockDes15 .blockDes{
+	background-color: black;
+	height:500px;
+	padding-top: 150px;
+	text-align: left;
+}
